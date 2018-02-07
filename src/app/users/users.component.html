@@ -1,0 +1,32 @@
+<div class="card">
+	<div class="card-body">
+<div class="container">
+ <h1 class="text-center">User Details</h1>
+ <button class="btn btn-danger" [routerLink]="['/users/new']">Create New User</button>
+<table class="table table-bordered">
+<thead>
+	<tr>
+		<th class="text-center text-capitalize">S NO</th>
+		<th class="text-center text-capitalize">name</th>
+		<th class="text-center text-capitalize">email</th>
+		<th class="text-center text-capitalize">mobile no</th>
+		<th class="text-center text-capitalize">role</th>
+		<th class="text-center text-capitalize">Experience</th>
+		<th class="text-center text-capitalize">action</th>
+	</tr>
+</thead>	
+<tbody>
+	<tr *ngFor=" let user of userData index as i ">
+		<td>{{i+1}}</td>
+		<td>{{user.userName}}</td>
+		<td>{{user.email}}</td>
+		<td>{{user.phone}}</td>
+		<td>{{user.role}}</td>
+		<td>{{user.experience}}</td>
+		<td><a [routerLink]="['/users/edit', user._id]">Edit User</a></td>
+	</tr>
+</tbody>
+</table>
+</div>	
+	</div>
+</div>

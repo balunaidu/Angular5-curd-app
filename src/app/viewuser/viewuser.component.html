@@ -1,0 +1,35 @@
+<div class="card">
+<div class="card-body">
+<div class="container">
+	<h1 class="text-center">View User</h1>
+	<div class="row">
+<div class="col-md-6 col-md-offset-4">
+	<form name="loginForm">
+	<div class="form-group">
+ 	<input type="text"  name="userName" class="form-control" [(ngModel)]="userData.userName" placeholder="USER NAME">
+	</div>
+	<div class="form-group">
+ 	<input type="email" name="email" class="form-control" [(ngModel)]="userData.email" placeholder="EMAIL">
+	</div>
+	<div class="form-group">
+ 	<input type="number" name="phone" class="form-control" [(ngModel)]="userData.phone" placeholder="Phone NO" max="10">
+	</div>
+	<div class="form-group">
+ 	<input type="text" name="role" class="form-control" [(ngModel)]="userData.role" placeholder="ROLE">
+	</div>
+	<div class="form-group">
+ 	<input type="text" name="experience" class="form-control" [(ngModel)]="userData.experience" placeholder="Experience">
+	</div>
+	<div>
+ 	<button class="btn btn-primary btn-lg" (click)="updateUser(userData)">UPDATE</button>
+ 	<button class="btn btn-danger btn-lg">DELETE</button>
+	</div>
+ </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+ 
